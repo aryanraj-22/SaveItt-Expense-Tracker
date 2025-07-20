@@ -52,7 +52,7 @@ const usersController = {
     }
     //! Generate a token
     const token = jwt.sign({ id: user._id },process.env.JWT_SECRET, {
-      expiresIn: process.env.JWT_EXPIRES_IN,
+      expiresIn: process.env.JWT_EXPIRES_IN || '10d',
     });
     //!Send the response
     res.json({
