@@ -16,7 +16,7 @@ mongoose
 
 //! Cors config
 const corsOptions = {
-  origin: ["https://saveitt-expense-tracker.onrender.com"],
+  origin: ["http://localhost:5173"],
 };
 app.use(cors(corsOptions));
 //!Middlewares
