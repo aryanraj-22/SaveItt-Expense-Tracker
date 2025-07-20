@@ -21,6 +21,10 @@ const corsOptions = {
 app.use(cors(corsOptions));
 //!Middlewares
 app.use(express.json()); //?Pass incoming json data
+
+app.get('/', (req, res) => {
+  res.send('Hello');
+});
 //!Routes
 app.use("/", userRouter);
 app.use("/", categoryRouter);
