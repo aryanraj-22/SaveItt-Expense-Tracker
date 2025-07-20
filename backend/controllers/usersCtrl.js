@@ -51,7 +51,7 @@ const usersController = {
       throw new Error("Invalid login credentials");
     }
     //! Generate a token
-    const token = jwt.sign({ id: user._id },process.env.JWT_SECRET, {
+    const token = jwt.sign({ id: user._id },process.env.JWT_SECRET || 'savvve', {
       expiresIn: process.env.JWT_EXPIRES_IN || '10d',
     });
     //!Send the response
