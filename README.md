@@ -78,3 +78,7 @@ npm run dev
 ## 🧑‍🎓 Developed By
 ####   Aryan Raj
 📧 aryan2210raj@gmail.com
+
+"dev":"npx nodemon backend/app.js",
+    "build":"npm install && npm install --prefix frontend && npm run build --prefix frontend ",
+    "start":"npx nodemon backend/app.js"
